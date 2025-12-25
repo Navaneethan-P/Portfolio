@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneethan P </title>
+    <meta name="description" content="Passionate Full Stack Developer and Cybersecurity Specialist with expertise in machine learning, web development, and innovative tech solutions.">
+    <meta name="keywords" content="Full Stack Developer, Cybersecurity, Machine Learning, Web Development, React, Node.js, Python">
+    <meta name="author" content="Navaneethan P">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Navaneethan P - Full Stack Developer">
+    <meta property="og:description" content="Passionate IT student specializing in Machine Learning, Cybersecurity, and Full-Stack Development">
+    <meta property="og:image" content="pic2.jpg">
+    <meta property="og:url" content="https://navaneethan.dev">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Navaneethan P - Full Stack Developer">
+    <meta name="twitter:description" content="Passionate IT student specializing in Machine Learning, Cybersecurity, and Full-Stack Development">
+    <meta name="twitter:image" content="pic2.jpg">
+    
+    <link rel="icon" href="pic2.jpg" type="image/jpeg">
+    <link rel="canonical" href="https://navaneethan.dev">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Navaneethan",
+        "jobTitle": "Full Stack Developer",
+        "description": "Passionate IT student specializing in Machine Learning, Cybersecurity, and Full-Stack Development",
+        "url": "https://navaneethan.dev",
+        "sameAs": [
+            "https://www.linkedin.com/in/navaneethan-p/",
+            "https://github.com/navaneethan-p"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Infinity Cosmoses"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Adhi College of Engineering and Technology"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="pic2.jpg" alt="Navaneethan P">
+            </div>
+            <div class="loading-text">Loading...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spider Web Canvas -->
+    <canvas id="spider-web" class="spider-web" aria-hidden="true"></canvas>
+
+    <!-- Particle System -->
+    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+    <!-- Skip to main content for accessibility -->
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="pic2.jpg" alt="Navaneethan P" class="logo-img">
+                <div class="logo-content">
+                    <span class="logo-text">Navaneethan P</span>
+                    <div class="logo-subtitle">Full Stack Developer</div>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li class="nav-item" role="none"><a href="#home" class="nav-link active" data-section="home" role="menuitem">🏠 Home</a></li>
+                <li class="nav-item" role="none"><a href="#about" class="nav-link" data-section="about" role="menuitem">👨‍💻 About</a></li>
+                <li class="nav-item" role="none"><a href="#skills" class="nav-link" data-section="skills" role="menuitem">⚡ Skills</a></li>
+                <li class="nav-item" role="none"><a href="#portfolio" class="nav-link" data-section="portfolio" role="menuitem">💼 Portfolio</a></li>
+                <li class="nav-item" role="none"><a href="#experience" class="nav-link" data-section="experience" role="menuitem">🚀 Experience</a></li>
+                <li class="nav-item" role="none"><a href="#contact" class="nav-link" data-section="contact" role="menuitem">📧 Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="hero-background" aria-hidden="true">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
+                </div>
+            </div>
+            
+            <!-- Live Status Indicators -->
+         
+
+            <div class="hero-content">
+                <div class="hero-text">
+                   
+                 
+                    <div class="hero-subtitle">
+                        <span class="typing-prefix">I'm a </span>
+                        <span id="typed-text" class="typed-text" aria-live="polite"></span>
+                        <span class="cursor" aria-hidden="true">|</span>
+                    </div>
+                    <p class="hero-description">
+                        🚀 Passionate IT student specializing in <strong>Machine Learning</strong>, <strong>Cybersecurity</strong>, and <strong>Full-Stack Development</strong>. 
+                        I build innovative solutions that solve real-world problems with cutting-edge technology.
+                    </p>
+                    
+                    <!-- Tech Stack Icons -->
+                    <div class="tech-stack" aria-label="Technology stack">
+                        <div class="tech-item" title="React" tabindex="0">⚛️</div>
+                        <div class="tech-item" title="Node.js" tabindex="0">🟢</div>
+                        <div class="tech-item" title="Python" tabindex="0">🐍</div>
+                        <div class="tech-item" title="JavaScript" tabindex="0">⚡</div>
+                        <div class="tech-item" title="Machine Learning" tabindex="0">🤖</div>
+                        <div class="tech-item" title="Cybersecurity" tabindex="0">🔒</div>
+                    </div>
+
+                    <div class="hero-stats" aria-label="Professional statistics">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="25" aria-label="25 projects completed">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="2" aria-label="2 years of experience">0</div>
+                            <div class="stat-label">Years Exp</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="15" aria-label="15 technologies mastered">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="100" aria-label="100% dedication">0</div>
+                            <div class="stat-label">% Dedication</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <span class="btn-text">🚀 View My Work</span>
+                            <div class="btn-particles" aria-hidden="true"></div>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span class="btn-text">💬 Let's Connect</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/navaneethan-p/" target="_blank" rel="noopener noreferrer" class="btn btn-special">
+                            <span class="btn-text">💼 LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container" data-tilt>
+                        <div class="image-frame">
+                            <img src="pic1.jpg" alt="Navaneethan P - Professional headshot" class="profile-img">
+                            <div class="image-overlay" aria-hidden="true"></div>
+                            <div class="image-glow" aria-hidden="true"></div>
+                        </div>
+                        <div class="floating-icons" aria-hidden="true">
+                            <div class="icon-item">⚡</div>
+                            <div class="icon-item">🔒</div>
+                            <div class="icon-item">🤖</div>
+                            <div class="icon-item">💻</div>
+                            <div class="icon-item">🌐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" aria-label="Scroll down to explore">
+                <div class="scroll-text">Scroll Down</div>
+                <div class="scroll-arrow" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-label="About me">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Discover my journey in technology and innovation</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text" data-reveal>
+                        <div class="about-intro">
+                            <h3>🎯 Transforming Ideas Into Digital Reality</h3>
+                            <p>I'm a passionate Information Technology student at <strong>Adhi College of Engineering and Technology</strong>, with a strong focus on emerging technologies. My expertise spans machine learning, cybersecurity, and real-time application development.</p>
+                            <p>I believe in creating solutions that make a difference. Whether it's developing AI-powered tools or building secure, scalable applications, I approach every project with curiosity and dedication to excellence.</p>
+                        </div>
+                        
+                        <!-- Quick Facts -->
+                        <div class="quick-facts">
+                            <div class="fact-item" data-tilt>
+                                <div class="fact-icon" aria-hidden="true">🎓</div>
+                                <div class="fact-content">
+                                    <span class="fact-label">Education</span>
+                                    <span class="fact-value">B.Tech IT (2023-2027)</span>
+                                </div>
+                            </div>
+                            <div class="fact-item" data-tilt>
+                                <div class="fact-icon" aria-hidden="true">📍</div>
+                                <div class="fact-content">
+                                    <span class="fact-label">Location</span>
+                                    <span class="fact-value">Sholinghur, Tamil Nadu</span>
+                                </div>
+                            </div>
+                            <div class="fact-item" data-tilt>
+                                <div class="fact-icon" aria-hidden="true">💼</div>
+                                <div class="fact-content">
+                                    <span class="fact-label">Status</span>
+                                    <span class="fact-value">Available for Opportunities</span>
+                                </div>
+                            </div>
+                            <div class="fact-item" data-tilt>
+                                <div class="fact-icon" aria-hidden="true">🌐</div>
+                                <div class="fact-content">
+                                    <span class="fact-label">Languages</span>
+                                    <span class="fact-value">Tamil, English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-achievements" data-reveal>
+                        <div class="achievement-item" data-tilt>
+                            <div class="achievement-icon" aria-hidden="true">🏆</div>
+                            <div class="achievement-content">
+                                <h4>Academic Excellence</h4>
+                                <p>Consistently maintaining high grades while pursuing B.Tech in Information Technology with focus on practical applications</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item" data-tilt>
+                            <div class="achievement-icon" aria-hidden="true">🚀</div>
+                            <div class="achievement-content">
+                                <h4>Innovation Focus</h4>
+                                <p>Developing cutting-edge solutions in AI, cybersecurity, and web development with real-world impact</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item" data-tilt>
+                            <div class="achievement-icon" aria-hidden="true">🤝</div>
+                            <div class="achievement-content">
+                                <h4>Professional Growth</h4>
+                                <p>Currently working as Junior Developer Intern at Infinity Cosmoses, gaining hands-on industry experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills" aria-label="Skills and expertise">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-category" data-reveal>
+                        <h3>🎨 Frontend Development</h3>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">🌐</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML/CSS skill level: 95%">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">⚡</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript skill level: 90%">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">⚛️</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="React.js skill level: 85%">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category" data-reveal>
+                        <h3>⚙️ Backend Development</h3>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">🟢</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js skill level: 80%">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">🐍</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Python skill level: 88%">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">🗄️</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Database Management</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Database Management skill level: 75%">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category" data-reveal>
+                        <h3>🚀 Specialized Skills</h3>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">🤖</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Machine Learning</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Machine Learning skill level: 75%">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">🔒</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Cybersecurity</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Cybersecurity skill level: 70%">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-tilt>
+                            <div class="skill-info">
+                                <div class="skill-icon" aria-hidden="true">🎨</div>
+                                <div class="skill-details">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX Design skill level: 82%">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio" aria-label="Portfolio projects">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">My Portfolio</h2>
+                    <p class="section-subtitle">Recent projects and innovative solutions</p>
+                </div>
+                <div class="portfolio-filters" data-reveal role="tablist" aria-label="Portfolio filter">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="portfolio-grid">🌟 All</button>
+                    <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" aria-controls="portfolio-grid">🌐 Web Apps</button>
+                    <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false" aria-controls="portfolio-grid">🤖 Machine Learning</button>
+                    <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false" aria-controls="portfolio-grid">📱 Mobile</button>
+                    <button class="filter-btn" data-filter="design" role="tab" aria-selected="false" aria-controls="portfolio-grid">🎨 Design</button>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid" role="tabpanel">
+                    <article class="portfolio-item" data-category="web" data-tilt>
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="E-commerce Platform project screenshot" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>🛒 E-commerce Platform</h3>
+                                    <p>Full-stack web application with payment integration and real-time features</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </div>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" title="View live demo" aria-label="View E-commerce Platform live demo">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15,3 21,3 21,9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="portfolio-link" title="View source code" aria-label="View E-commerce Platform source code">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="ml" data-tilt>
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="AI Chatbot project screenshot" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>🤖 AI Chatbot</h3>
+                                    <p>Intelligent chatbot using natural language processing and machine learning</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">TensorFlow</span>
+                                        <span class="tech-tag">NLP</span>
+                                    </div>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" title="View live demo" aria-label="View AI Chatbot live demo">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15,3 21,3 21,9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="portfolio-link" title="View source code" aria-label="View AI Chatbot source code">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="web" data-tilt>
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Task Management System project screenshot" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>📋 Task Management System</h3>
+                                    <p>Real-time collaborative task management platform with advanced features</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">Vue.js</span>
+                                        <span class="tech-tag">Socket.io</span>
+                                        <span class="tech-tag">Express</span>
+                                    </div>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" title="View live demo" aria-label="View Task Management System live demo">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15,3 21,3 21,9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="portfolio-link" title="View source code" aria-label="View Task Management System source code">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="mobile" data-tilt>
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Social Media App project screenshot" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>📱 Social Media App</h3>
+                                    <p>Cross-platform mobile application with real-time messaging and social features</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">Firebase</span>
+                                        <span class="tech-tag">Redux</span>
+                                    </div>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" title="View live demo" aria-label="View Social Media App live demo">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15,3 21,3 21,9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="portfolio-link" title="View source code" aria-label="View Social Media App source code">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="design" data-tilt>
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Brand Identity Design project screenshot" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>🎨 Brand Identity Design</h3>
+                                    <p>Complete brand identity and visual design system for modern businesses</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">Figma</span>
+                                        <span class="tech-tag">Adobe CC</span>
+                                        <span class="tech-tag">Branding</span>
+                                    </div>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" title="View live demo" aria-label="View Brand Identity Design live demo">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15,3 21,3 21,9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="portfolio-link" title="View source code" aria-label="View Brand Identity Design source code">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item" data-category="ml" data-tilt>
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/8439093/pexels-photo-8439093.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Data Analytics Dashboard project screenshot" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>📊 Data Analytics Dashboard</h3>
+                                    <p>Interactive dashboard with machine learning insights and predictive analytics</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Pandas</span>
+                                        <span class="tech-tag">D3.js</span>
+                                    </div>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" title="View live demo" aria-label="View Data Analytics Dashboard live demo">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15,3 21,3 21,9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="portfolio-link" title="View source code" aria-label="View Data Analytics Dashboard source code">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience" aria-label="Professional experience and education">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <p class="section-subtitle">My professional journey and academic achievements</p>
+                </div>
+                <div class="timeline" role="list">
+                    <div class="timeline-item" data-reveal role="listitem">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon" aria-hidden="true">💼</div>
+                        </div>
+                        <div class="timeline-content" data-tilt>
+                            <div class="timeline-date">2025 - Present</div>
+                            <h3>Junior Developer Intern</h3>
+                            <h4>🏢 Infinity Cosmoses, Chennai</h4>
+                            <p>Working on design, development, and implementation of web applications. Focusing on modern frontend technologies, user experience optimization, and collaborative development practices in a professional environment.</p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">UI/UX</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-reveal role="listitem">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon" aria-hidden="true">🎓</div>
+                        </div>
+                        <div class="timeline-content" data-tilt>
+                            <div class="timeline-date">2023 - 2027</div>
+                            <h3>B.Tech in Information Technology</h3>
+                            <h4>🏫 Adhi College of Engineering and Technology</h4>
+                            <p>Pursuing Bachelor's degree with focus on Machine Learning, Cybersecurity, and Full-stack Development. Active in technical projects, innovation initiatives, and maintaining academic excellence while building practical skills.</p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Cybersecurity</span>
+                                <span class="skill-tag">Data Structures</span>
+                                <span class="skill-tag">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-reveal role="listitem">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon" aria-hidden="true">🚀</div>
+                        </div>
+                        <div class="timeline-content" data-tilt>
+                            <div class="timeline-date">2024 - Present</div>
+                            <h3>Freelance Developer</h3>
+                            <h4>💻 Various Clients & Projects</h4>
+                            <p>Developing web applications, mobile apps, and providing UI/UX design services for startups and small businesses. Building innovative solutions with modern technologies and delivering high-quality results.</p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Full Stack Development</span>
+                                <span class="skill-tag">Mobile Development</span>
+                                <span class="skill-tag">UI/UX Design</span>
+                                <span class="skill-tag">Client Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-reveal role="listitem">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon" aria-hidden="true">📚</div>
+                        </div>
+                        <div class="timeline-content" data-tilt>
+                            <div class="timeline-date">2022 - 2023</div>
+                            <h3>Self-Taught Programming Journey</h3>
+                            <h4>🌐 Online Learning & Practice</h4>
+                            <p>Started learning programming through online courses, tutorials, and hands-on projects. Built foundation in web development, problem-solving, and modern programming practices through dedicated self-study.</p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-label="Contact information">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's collaborate on something amazing together</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info" data-reveal>
+                        <div class="contact-item" data-tilt>
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Sholinghur, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-tilt>
+                            <div class="contact-icon" aria-hidden="true">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:p.navaneethan2005@gmail.com">p.navaneethan2005@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-tilt>
+                            <div class="contact-icon" aria-hidden="true">📱</div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+916382932703">+91 6382932703</a></p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/navaneethan-p/" target="_blank" rel="noopener noreferrer" class="social-link" data-tilt title="LinkedIn Profile" aria-label="Visit my LinkedIn profile">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" data-tilt title="GitHub Profile" aria-label="Visit my GitHub profile">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" data-tilt title="Twitter Profile" aria-label="Visit my Twitter profile">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" data-tilt title="Portfolio Website" aria-label="Visit my portfolio website">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        </div>
+ <!-- Netlify-ready Contact Form -->
+<form 
+  name="contact" 
+  method="POST" 
+  data-netlify="true" 
+  netlify-honeypot="bot-field" 
+  class="contact-form" 
+  id="contact-form"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <p hidden>
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
+
+  <div class="form-group">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <label for="name">Your Name</label>
+  </div>
+
+  <div class="form-group">
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <label for="email">Your Email</label>
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    <label for="subject">Subject</label>
+  </div>
+
+  <div class="form-group">
+    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    <label for="message">Your Message</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    <span class="btn-text">🚀 Send Message</span>
+  </button>
+</form>
+
+
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Navaneethan P. All rights reserved.</p>
+                    
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" data-tilt aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5,12 12,5 19,12"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
