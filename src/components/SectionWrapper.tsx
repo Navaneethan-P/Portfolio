@@ -11,7 +11,7 @@ interface Props {
 
 export default function SectionWrapper({ id, title, number, children, className = '' }: Props) {
   return (
-    <section id={id} className={`py-28 px-6 relative ${className}`}>
+    <section id={id} className={`py-28 px-6 relative z-10 ${className}`}>
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

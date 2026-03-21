@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail, Code, Download, Instagram, ChefHat } from 'lucide-react';
-import HeroScene from './HeroScene';
 import profilePicture from '@/assets/pic_nobg.png';
 import { useCodingStats } from '@/hooks/useStats';
 
@@ -9,7 +8,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <HeroScene />
 
       {/* Floating decorative elements */}
       <div className="absolute top-20 left-10 opacity-[0.07] text-[120px] font-bold text-ink select-none pointer-events-none float-slow">
@@ -25,7 +23,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.23, 1, 0.32, 1], delay: 0.2 }}
-          className="relative flex-shrink-0"
+          className="relative flex-shrink-0 mt-24 lg:mt-0"
         >
           <div className="relative float-slow">
             <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-3xl overflow-hidden border-2 border-border shadow-lg">
@@ -57,7 +55,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mt-3 mb-4 leading-[1.05]"
+            className="font-display text-[7.5vw] min-[400px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-3 mb-4 leading-[1.1] sm:leading-[1.05]"
           >
             <span className="text-ink font-signature tracking-widest uppercase">Navan</span>
             <span className="text-sky font-signature tracking-widest uppercase">eethan</span>
@@ -80,7 +78,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="flex items-center gap-3 justify-center lg:justify-start"
+            className="flex flex-wrap items-center gap-3 justify-center lg:justify-start"
           >
             {[
               { icon: Github, href: 'https://github.com/Navaneethan-P', label: 'GitHub' },

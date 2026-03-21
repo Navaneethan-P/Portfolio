@@ -1,17 +1,21 @@
 import { useQuery } from '@tanstack/react-query';
 
-const LEETCODE_API = 'https://leetcode-stats-api.herokuapp.com/navaneethan_2005';
-const CODECHEF_API = 'https://codechef-api.vercel.app/handle/navaneethan_07';
+const CORS_PROXY = 'https://corsproxy.io/?';
+const LEETCODE_API = `${CORS_PROXY}${encodeURIComponent('https://leetcode-stats-api.herokuapp.com/navaneethan_2005')}`;
+const CODECHEF_API = `${CORS_PROXY}${encodeURIComponent('https://codechef-api.vercel.app/handle/navaneethan_07')}`;
 
 export function useCodingStats() {
   return useQuery({
     queryKey: ['codingStats'],
     queryFn: async () => {
-      try {
-        const [lcRes, ccRes] = await Promise.allSettled([
-          fetch(LEETCODE_API).then(r => r.json()),
-          fetch(CODECHEF_API).then(r => r.json())
-        ]);
+        // Temporarily mocking network requests to prevent browser 402/503 console logs
+        // Wait until APIs are restored before re-enabling actual fetch calls.
+        const lcRes = { status: 'rejected' } as any;
+        const ccRes = { status: 'rejected' } as any;
+        // const [lcRes, ccRes] = await Promise.allSettled([
+        //   fetch(LEETCODE_API).then(r => r.json()),
+        //   fetch(CODECHEF_API).then(r => r.json())
+        // ]);
         
         let lcSolved = 0;
         let ccSolved = 0;
@@ -27,9 +31,6 @@ export function useCodingStats() {
 
         const total = lcSolved + ccSolved;
         return total > 0 ? total : 1000; // Fallback to 1000 if both endpoints fail
-      } catch (err) {
-        return 1000;
-      }
     },
     staleTime: 1000 * 60 * 60, // 1 hour
   });

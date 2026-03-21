@@ -8,10 +8,12 @@ import AwardsSection from '@/components/AwardsSection';
 import CertificatesSection from '@/components/CertificatesSection';
 import OfferLettersSection from '@/components/OfferLettersSection';
 import ContactSection from '@/components/ContactSection';
+import HeroScene from '@/components/HeroScene';
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-background grain-overlay">
+    <div className="min-h-screen grain-overlay">
+      <HeroScene />
       <Navbar />
       <HeroSection />
       <AboutSection />
